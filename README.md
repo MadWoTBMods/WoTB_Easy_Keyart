@@ -3,7 +3,7 @@ This is a Script written in Windows Batch Script, which creates the login Keyart
 # Details
 - Written in Ruby, Depends on ImageMagick
 - Still development in progress
-- converts all .png files in the Keyart_Input Folder.
+- converts all .png files in the Keyart_Input Folder. (The Keyart_Input folder is script generated.)
 - Recommended Input size: 2728 x 1536
 # Planned
 - Add Support to MacOS Devices
