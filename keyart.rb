@@ -43,11 +43,7 @@ def Generation(definition, png_name)
 	FileUtils::cp "#{$tools_path}\\tex.tex", "Keyart_Output/#{png_name}/Data/#{definition}/UI/KeyArt/Mad_Easy_Keyart.tex"
 		output_size = GrabImageSize("Keyart_Output/#{png_name}/Data/#{definition}/UI/KeyArt/Mad_Easy_Keyart.webp")
 		open("Keyart_Output/#{png_name}/Data/#{definition}/UI/KeyArt/keyart.txt", 'w') { |content|
-			content << "1\n"
-			content << "Mad_Easy_Keyart.tex\n"
-			content << "#{output_size[0]} #{output_size[1]}\n"
-			content << "1\n"
-			content << "0 0 #{output_size[0]} #{output_size[1]} 0 0 0 madwotbmods0"
+			content = "1\nMad_Easy_Keyart.tex\n#{output_size[0]} #{output_size[1]}\n1\n0 0 #{output_size[0]} #{output_size[1]} 0 0 0 madwotbmods0"
 		}
 end 
 
