@@ -8,9 +8,9 @@ require_relative "#{$tools_path}/OS"
 cur_os = OS.grab
 
 if cur_os == "windows" #Grabs Magick path
-	$magick = "#{$tools_path}\\magick.exe"
+	$magick = "#{$tools_path}\\Magick_Win\\magick.exe"
 elsif cur_os == "macos"
-	$magick = "#{$tools_path}\\magick" #MacOS Users Please help me with this
+	$magick = "#{$tools_path}\\Magick_Mac\\bin\\magick" #MacOS Users Please help me with this
 else 
 	print "This OS is not supported. Press Enter to exit."
 	gets.chomp
