@@ -1,27 +1,22 @@
 require 'fileutils'
 
-$version = "1.0.1"
+
+$version = "1.0.2"
 $tools_path = "tools"
 
-module OS #Module for OS detection
-  def OS.windows?
-    (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
-  end
+require_relative "#{$tools_path}/OS"
+cur_os = OS.grab
 
-  def OS.mac?
-   (/darwin/ =~ RUBY_PLATFORM) != nil
-  end
-end
-
-if OS.windows? #Grabs Magick path
+if cur_os == "windows" #Grabs Magick path
 	$magick = "#{$tools_path}\\magick.exe"
-elsif OS.mac?
+elsif cur_os == "macos"
 	$magick = "#{$tools_path}\\magick" #MacOS Users Please help me with this
 else 
 	print "This OS is not supported. Press Enter to exit."
 	gets.chomp
 	exit
 end
+
 
 def GrabImageSize(location) #grabs Image size
 	input = `#{$magick} identify "#{location}"`
