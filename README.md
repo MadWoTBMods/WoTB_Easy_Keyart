@@ -19,3 +19,7 @@ I was Unable to Distinguish between the two pictures. On that Conclusion Webp is
 
 # Planned
 - put together with other modules to form a big modding script for WoTB.
+
+# Common Q&A
+- I already placed my Png file into the Keyart_Input folder, Why it doesn't work?
+- You need to have ImageMagick Installed on your machine. Scroll up for the link to that.
