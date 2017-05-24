@@ -1,12 +1,7 @@
 require 'fileutils'
 
-
-$version = "1.0.3"
+$version = "1.0.4"
 $tools_path = "tools"
-
-require_relative "#{$tools_path}/OS"
-cur_os = OS.grab
-
 
 def GrabImageSize(location) #grabs Image size
 	input = `magick identify "#{location}"`
