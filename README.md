@@ -17,7 +17,7 @@ Download at https://github.com/MadWoTBMods/WoTB_Easy_Keyart/releases
 I have done a lot of experiments on the effects of Webp vs Png in Quality and file sizes, using a 6752 x 3955 image.
 When Webp has a quality of 99 (near loseless, but it's now lossy), has a size of 2.5 MB.
 For PNG it has a size of 17.9 MB (loseless).
-I was Unable to Distinguish between the two pictures. On that Conclusion Webp is better.
+It is almost for human eyes to Distinguish the Difference between the two images... even as a lossy compression. So .webp was used.
 
 # Planned
 - put together with other modules to form a big modding script for WoTB.
