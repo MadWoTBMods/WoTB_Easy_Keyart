@@ -50,6 +50,6 @@ Temporary Items
 *.webp
 *.zip
 *.bak
-.Keyart_Input
-.Keyart_Output
-.old+output
+Keyart_Input/
+Keyart_Output/
+old+output/
