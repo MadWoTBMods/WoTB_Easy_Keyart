@@ -49,3 +49,7 @@ Temporary Items
 *.txt
 *.webp
 *.zip
+*.bak
+.Keyart_Input
+.Keyart_Output
+.old+output
